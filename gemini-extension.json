@@ -1,0 +1,11 @@
+{
+  "name": "call2me",
+  "version": "1.0.0",
+  "description": "Give your AI assistant a real phone line: place calls with AI voice agents, read transcripts, run a live two-way interpreter in 31 languages, and buy phone numbers.",
+  "mcpServers": {
+    "call2me": {
+      "httpUrl": "https://mcp.call2me.app/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

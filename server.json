@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.call2me/mcp",
+  "title": "Call2Me",
+  "description": "Place real phone calls, read transcripts, run a live interpreter and buy numbers.",
+  "version": "1.0.0",
+  "websiteUrl": "https://call2me.app/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.call2me.app/mcp"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://call2me.app/logo-1024.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "1024x1024"
+      ]
+    }
+  ]
+}

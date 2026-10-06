@@ -1,0 +1,29 @@
+{
+  "name": "call2me",
+  "version": "1.0.0",
+  "description": "Give your AI assistant a real phone line: place calls with AI voice agents, read transcripts, run a live two-way interpreter in 31 languages, and buy phone numbers.",
+  "author": {
+    "name": "Call2Me",
+    "url": "https://call2me.app"
+  },
+  "homepage": "https://call2me.app",
+  "repository": "https://github.com/call2me-app/mcp",
+  "license": "MIT",
+  "keywords": [
+    "call2me",
+    "phone-calls",
+    "voice-ai",
+    "voice-agent",
+    "interpreter",
+    "translation",
+    "telephony",
+    "transcripts",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Call2Me",
+    "shortDescription": "Real phone calls and a live interpreter",
+    "longDescription": "Give your AI assistant a real phone line: place calls with AI voice agents, read transcripts, run a live two-way interpreter in 31 languages, and buy phone numbers. Sign in with Call2Me on first use (OAuth); the model never sees your API key."
+  }
+}

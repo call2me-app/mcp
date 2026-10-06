@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "call2me": {
+      "type": "http",
+      "url": "https://mcp.call2me.app/mcp"
+    }
+  }
+}

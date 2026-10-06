@@ -1,0 +1,16 @@
+{
+  "name": "call2me",
+  "description": "Call2Me: AI phone calls and a live interpreter for your assistant.",
+  "owner": {
+    "name": "Call2Me",
+    "url": "https://call2me.app"
+  },
+  "plugins": [
+    {
+      "name": "call2me",
+      "source": "./",
+      "description": "Give your AI assistant a real phone line: place calls with AI voice agents, read transcripts, run a live two-way interpreter in 31 languages, and buy phone numbers.",
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://cursor.com/schemas/cursor-plugin/plugin.json",
+  "name": "call2me",
+  "displayName": "Call2Me",
+  "version": "1.0.0",
+  "description": "Give your AI assistant a real phone line: place calls with AI voice agents, read transcripts, run a live two-way interpreter in 31 languages, and buy phone numbers.",
+  "author": {
+    "name": "Call2Me",
+    "url": "https://call2me.app"
+  },
+  "publisher": "Call2Me",
+  "homepage": "https://call2me.app",
+  "repository": "https://github.com/call2me-app/mcp",
+  "license": "MIT",
+  "category": "productivity",
+  "keywords": [
+    "call2me",
+    "phone-calls",
+    "voice-ai",
+    "voice-agent",
+    "interpreter",
+    "translation",
+    "telephony",
+    "transcripts",
+    "mcp"
+  ],
+  "logo": "assets/logo.png",
+  "mcpServers": "./.mcp.json"
+}
