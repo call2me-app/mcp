@@ -30,6 +30,7 @@ Endpoint: `https://mcp.call2me.app/mcp` (Streamable HTTP)
 | **VS Code** | Click *Install in VS Code* above |
 | **Gemini CLI** | `gemini extensions install https://github.com/call2me-app/mcp` |
 | **Codex** | `codex mcp add call2me --url https://mcp.call2me.app/mcp` |
+| **Cline** | MCP Servers → Remote Servers → URL `https://mcp.call2me.app/mcp` (see [llms-install.md](llms-install.md)) |
 
 On first use you sign in to Call2Me in the browser (OAuth 2.1 with PKCE). New accounts get **$5 of free credit**, no card needed.
 
