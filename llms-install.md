@@ -17,7 +17,7 @@ Call2Me is a **hosted** MCP server — there is nothing to clone, build or run l
 }
 ```
 
-2. On the first tool call the client opens a browser window to sign in to Call2Me (OAuth 2.1 with PKCE). No API key is pasted anywhere; the model never sees one. New accounts get $5 of free credit without a card.
+2. On the first tool call the client opens the Call2Me connect page in the browser (OAuth 2.1 with PKCE). The user pastes a Call2Me API key there once (dash.call2me.app → API Keys); it is stored encrypted server-side and never reaches the model or the client config. New accounts get $5 of free credit without a card.
 
 3. Verify with a read-only tool, e.g. `call2me_profile` or `call2me_get_wallet`.
 

@@ -32,7 +32,7 @@ Endpoint: `https://mcp.call2me.app/mcp` (Streamable HTTP)
 | **Codex** | `codex mcp add call2me --url https://mcp.call2me.app/mcp` |
 | **Cline** | MCP Servers → Remote Servers → URL `https://mcp.call2me.app/mcp` (see [llms-install.md](llms-install.md)) |
 
-On first use you sign in to Call2Me in the browser (OAuth 2.1 with PKCE). New accounts get **$5 of free credit**, no card needed.
+On first use the Call2Me connect page opens in your browser (OAuth 2.1 with PKCE): paste your API key once (dash.call2me.app → API Keys) and approve the scopes. The key stays encrypted on our side and never reaches the model. New accounts get **$5 of free credit**, no card needed.
 
 ## Tools (37)
 
