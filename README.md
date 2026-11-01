@@ -15,7 +15,7 @@ Call2Me is a hosted [Model Context Protocol](https://modelcontextprotocol.io) se
 - **Run a live two-way interpreter** between two people who share no language — 31 languages, over a browser link or the phone
 - **Build voice agents** — prompt, language, voice and model
 - **Buy and bind phone numbers** in 21 countries
-- Check **campaigns, scheduled calls, call history and wallet balance**
+- Check **scheduled calls, call history and wallet balance**
 
 Endpoint: `https://mcp.call2me.app/mcp` (Streamable HTTP)
 
