@@ -34,16 +34,26 @@ Endpoint: `https://mcp.call2me.app/mcp` (Streamable HTTP)
 
 On first use the Call2Me connect page opens in your browser (OAuth 2.1 with PKCE): paste your API key once (dash.call2me.app → API Keys) and approve the scopes. The key stays encrypted on our side and never reaches the model. New accounts get **$5 of free credit**, no card needed.
 
-## Tools (37)
+## Tools (81)
 
 | Area | Tools |
 |---|---|
-| Account | `call2me_profile`, `call2me_get_wallet`, `call2me_get_pricing` |
-| Calls | `call2me_make_outbound_call`, `call2me_end_call`, `call2me_list_calls`, `call2me_get_call`, `call2me_get_call_transcript` |
-| Voice agents | `call2me_list_agents`, `call2me_get_agent`, `call2me_create_agent`, `call2me_update_agent`, `call2me_delete_agent`, `call2me_create_voice_session` |
-| Live interpreter | `call2me_list_interpreters`, `call2me_get_interpreter`, `call2me_create_interpreter`, `call2me_update_interpreter`, `call2me_delete_interpreter`, `call2me_start_interpreter_call`, `call2me_enable_interpreter_web`, `call2me_end_interpreter_web`, `call2me_get_interpreter_web_status`, `call2me_create_interpreter_passcode`, `call2me_list_interpreter_calls` |
-| Phone numbers | `call2me_list_allowed_countries`, `call2me_search_numbers`, `call2me_checkout_number`, `call2me_purchase_number`, `call2me_bind_number`, `call2me_unbind_number`, `call2me_release_number`, `call2me_list_phone_numbers` |
-| Scheduling | `call2me_create_schedule`, `call2me_list_schedules`, `call2me_cancel_schedule`, `call2me_list_campaigns` |
+| Account & billing | `call2me_profile`, `call2me_get_wallet`, `call2me_get_pricing`, `call2me_estimate_call_cost`, `call2me_list_transactions`, `call2me_get_usage_analytics`, `call2me_get_auto_charge`, `call2me_create_topup_link` |
+| Calls | `call2me_list_calls`, `call2me_get_call`, `call2me_get_call_transcript`, `call2me_list_interpreter_calls`, `call2me_wait_for_call`, `call2me_get_call_recording`, `call2me_make_outbound_call`, `call2me_end_call` |
+| Voice agents | `call2me_list_agents`, `call2me_get_agent`, `call2me_get_agent_stats`, `call2me_list_voices`, `call2me_create_agent`, `call2me_update_agent`, `call2me_create_voice_session`, `call2me_duplicate_agent`, `call2me_delete_agent` |
+| Knowledge bases | `call2me_list_knowledge_bases`, `call2me_get_knowledge_base`, `call2me_query_knowledge_base`, `call2me_create_knowledge_base`, `call2me_add_knowledge_base_sources`, `call2me_delete_knowledge_base` |
+| Live interpreter | `call2me_list_interpreters`, `call2me_get_interpreter`, `call2me_get_interpreter_web_status`, `call2me_create_interpreter`, `call2me_update_interpreter`, `call2me_enable_interpreter_web`, `call2me_create_interpreter_passcode`, `call2me_start_interpreter_call`, `call2me_delete_interpreter`, `call2me_end_interpreter_web` |
+| Phone numbers & SIP | `call2me_list_phone_numbers`, `call2me_list_allowed_countries`, `call2me_search_numbers`, `call2me_list_sip_trunks`, `call2me_bind_number`, `call2me_checkout_number`, `call2me_create_sip_trunk`, `call2me_register_phone_number`, `call2me_purchase_number`, `call2me_release_number`, `call2me_unbind_number`, `call2me_delete_sip_trunk` |
+| SMS | `call2me_list_sms`, `call2me_send_sms` |
+| Chat & widgets | `call2me_list_widgets`, `call2me_get_widget`, `call2me_list_chats`, `call2me_get_chat`, `call2me_create_widget`, `call2me_update_widget`, `call2me_start_chat`, `call2me_delete_widget`, `call2me_send_chat_message` |
+| Scheduling & campaigns | `call2me_list_campaigns`, `call2me_list_schedules`, `call2me_get_campaign`, `call2me_get_campaign_results`, `call2me_get_schedule`, `call2me_create_schedule`, `call2me_create_campaign`, `call2me_add_campaign_contacts`, `call2me_update_schedule`, `call2me_cancel_schedule`, `call2me_campaign_action`, `call2me_delete_campaign` |
+| Webhooks & notifications | `call2me_get_webhook`, `call2me_list_notification_targets`, `call2me_set_webhook`, `call2me_create_notification_target`, `call2me_delete_notification_target` |
+
+**Per-call personalization.** `call2me_make_outbound_call` accepts `dynamic_variables` (e.g. `{"customer_name": "Ada", "order": "#1042"}`), substituted as `{{customer_name}}` into the agent's prompt, opening line and closing line for that call only, plus an optional `begin_message` override for the opening sentence.
+
+**Agent tuning.** `call2me_create_agent` / `call2me_update_agent` set the LLM model, engine (`cascade` or `realtime`), temperature, voice, built-in functions, opening and closing messages. Changing the model or engine changes the per-minute price; `call2me_estimate_call_cost` shows it first.
+
+**Waiting for results.** `call2me_wait_for_call` blocks (up to 120 s) until a call ends and returns its status, so the assistant can read the transcript right after.
 
 ## Safety
 
